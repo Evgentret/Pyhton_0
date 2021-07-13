@@ -1,5 +1,5 @@
 # FILLER
-f="-"
+f = "-"
 
 # GAME FIELD
 matrix = [[f] * 3 for i in range(3)]
@@ -65,6 +65,7 @@ def check_winner():
     # CHECK DIAGONAL 1
     if matrix[0][0] == piece and matrix[1][1] == piece and matrix[2][2] == piece:
         return True
+
     # CHECK DIAGONAL 2
     if matrix[0][2] == piece and matrix[1][1] == piece and matrix[2][0] == piece:
         return True
